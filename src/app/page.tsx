@@ -1,3 +1,13 @@
+"use server";
+
+import ImageGenerator from "./components/ImageGenerator";
+import { generateImage } from "./actions/generateImage";
+
+export default async function Home() {
+  return <ImageGenerator generateImage={generateImage} />;
+}
+
+/*
 "use client";
 
 import { useState } from "react";
@@ -16,6 +26,7 @@ export default function Home() {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
+          // "x-api-key": "efjeojvdsovsokmvom"
         },
         body: JSON.stringify({ text: inputText }),
       });
@@ -83,3 +94,4 @@ export default function Home() {
     </div>
   );
 }
+  */
