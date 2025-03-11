@@ -8,6 +8,8 @@ export default async function Home() {
 }
 
 /*
+app seems to still be working
+
 "use client";
 
 import { useState } from "react";
